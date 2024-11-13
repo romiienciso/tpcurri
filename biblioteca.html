@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="biblioteca">
+        <h1>Mi Biblioteca Personal</h1>
+
+        <ol class="libros">
+            <li class="libro">
+                <h3 onclick="toggleSinopsis(1)">El Alquimista</h3>
+                <div class="sinopsis" id="sinopsis1">
+                    <p>Un libro sobre la búsqueda de los sueños y el destino. Paulo Coelho nos inspira a seguir nuestra leyenda personal.</p>
+                    <img src="portada1.jpg" alt="El Alquimista">
+                </div>
+            </li>
+
+            <li class="libro">
+                <h3 onclick="toggleSinopsis(2)">1984</h3>
+                <div class="sinopsis" id="sinopsis2">
+                    <p>Una obra maestra de George Orwell que nos alerta sobre los peligros del totalitarismo y la vigilancia extrema.</p>
+                    <img src="portada2.jpg" alt="1984">
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        function toggleSinopsis(index) {
+            var sinopsis = document.getElementById('sinopsis' + index);
+            sinopsis.style.display = (sinopsis.style.display === 'block') ? 'none' : 'block';
+        }
+
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

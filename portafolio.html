@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="galeria">
+        <h1>Galería de Imágenes</h1>
+
+        <div class="imagenes">
+            <!-- Imagen 1 -->
+            <div class="imagen">
+                <img src="billie.jpg" alt="Imagen 1" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 1</h3>
+                    <p>Descripción breve de la imagen 1 que aparece al hacer hover.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="imagen">
+                <img src="charli.jpg" alt="Imagen 2" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 2</h3>
+                    <p>Descripción breve de la imagen 2 que aparece al hacer hover.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="imagen">
+                <img src="fatal.jpg" alt="Imagen 3" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 3</h3>
+                    <p>Descripción breve de la imagen 3 que aparece al hacer hover.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="imagen">
+                <img src="barbi.jpg" alt="Imagen 4" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 4</h3>
+                    <p>Descripción breve de la imagen 4 que aparece al hacer hover.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="imagen">
+                <img src="img5.jpg" alt="Imagen 5" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 5</h3>
+                    <p>Descripción breve de la imagen 5 que aparece al hacer hover.</p>
+                </div>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="imagen">
+                <img src="img6.jpg" alt="Imagen 6" class="img-hover">
+                <div class="descripcion">
+                    <h3>Título 6</h3>
+                    <p>Descripción breve de la imagen 6 que aparece al hacer hover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

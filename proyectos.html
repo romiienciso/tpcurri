@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Interactivos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="proyectos">
+        <h1>Proyectos Interactivos</h1>
+
+        <div class="carrusel">
+            <div class="carrusel-imagen">
+                <img src="carrusel1.jpg" alt="Proyecto 1">
+                <div class="texto-superpuesto">Proyecto de Diseño Web</div>
+            </div>
+            <div class="carrusel-imagen">
+                <img src="carrusel2.jpg" alt="Proyecto 2">
+                <div class="texto-superpuesto">Aplicación Web Interactiva</div>
+            </div>
+            <div class="carrusel-imagen">
+                <img src="carrusel3.jpg" alt="Proyecto 3">
+                <div class="texto-superpuesto">App Móvil para Gestión de Tareas</div>
+            </div>
+        </div>
+
+        <h2>Tecnologías Usadas</h2>
+        <ul class="tecnologias">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

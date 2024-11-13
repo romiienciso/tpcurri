@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header (Menú de navegación) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bienvenida a mi Espacio Digital</h1>
+            <p class="descripcion-hero">Explora mi trabajo, proyectos creativos y la evolución de mis ideas. Este es un lugar donde el diseño y la tecnología se encuentran para dar vida a nuevas propuestas.</p>
+        </div>
+    </section>
+    
+    <section class="contenido">
+        <p class="descripcion-hero">Te invito a descubrir más sobre mis proyectos, mi blog, y todo lo que comparto aquí. Cada sección está pensada para ofrecerte una visión detallada de mi trayectoria profesional y mis intereses.</p>
+        <div class="botones">
+            <a href="perfil.html" class="btn-animado">Mi Perfil</a>
+            <a href="portafolio.html" class="btn-animado">Portafolio</a>
+            <a href="blog.html" class="btn-animado">Blog</a>
+            <a href="proyectos.html" class="btn-animado">Proyectos</a>
+            <a href="biblioteca.html" class="btn-animado">Biblioteca</a>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

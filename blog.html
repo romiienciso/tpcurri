@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="blog">
+        <h1>Mi Blog Personal</h1>
+
+        <div class="articulo" id="articulo1">
+            <h2>Cómo empecé mi viaje en la programación</h2>
+            <img src="blog1.jpg" alt="Imagen de blog 1">
+            <p>Desde que descubrí la programación, no he dejado de aprender y mejorar mis habilidades. En este artículo, te contaré cómo empezó mi viaje...</p>
+            <a href="https://externo.com" class="leer-mas">Leer más</a>
+        </div>
+
+        <div class="articulo" id="articulo2">
+            <h2>Mis recursos favoritos para diseñar web</h2>
+            <img src="blog2.jpg" alt="Imagen de blog 2">
+            <p>Hay una gran cantidad de herramientas disponibles hoy en día para diseñar páginas web. En este artículo, comparto mis recursos favoritos...</p>
+            <a href="https://externo.com" class="leer-mas">Leer más</a>
+        </div>
+
+        <div class="articulo" id="articulo3">
+            <h2>La importancia de un buen portafolio</h2>
+            <img src="blog3.jpg" alt="Imagen de blog 3">
+            <p>Un portafolio bien diseñado puede marcar la diferencia. Te hablaré de cómo crear un portafolio que refleje tu estilo y capacidades...</p>
+            <a href="https://externo.com" class="leer-mas">Leer más</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

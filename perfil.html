@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header (Menú de navegación) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Perfil -->
+    <section class="perfil">
+        <div class="perfil-info">
+            <h1>Hola, soy Romina E</h1>
+            <p class="descripcion-perfil">Soy una profesional apasionada por el diseño, la tecnología y el desarrollo. Mi objetivo es combinar creatividad y lógica para crear soluciones digitales innovadoras y atractivas. Con experiencia en varios campos, siempre busco aprender y evolucionar en mi carrera.</p>
+
+        </div>
+
+        <!-- Tabla de habilidades -->
+        <section class="habilidades">
+            <h2>Mis Habilidades</h2>
+            <table>
+                <tr>
+                    <td>HTML</td>
+                    <td>Avanzado</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermedio</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <td>Diseño Gráfico</td>
+                    <td>Avanzado</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contacto">
+            <h2>Conecta conmigo</h2>
+            <div class="redes">
+                <!-- Enlace a Twitter -->
+                <a href="https://twitter.com" class="red social">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <!-- Enlace a Facebook -->
+                <a href="https://www.facebook.com" class="red social">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <!-- Enlace a Instagram -->
+                <a href="https://www.instagram.com" class="red social">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Enlace al CV -->
+                <a href="cv.pdf" class="btn-cv">
+                    <i class="fas fa-file-pdf"></i> Ver mi CV
+                </a>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="fecha"></span> - Tu Nombre</p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
